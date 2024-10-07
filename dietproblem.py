@@ -1,7 +1,7 @@
 # import pulp
 from pulp import LpVariable, LpProblem, LpMaximize, LpStatus, value, LpMinimize
 
-# define variables
+# define variables (set lowbound to 0 for pt 3/initial solution and set lowbound to 1 for pt 4/revised solution)
 pizza = LpVariable("pizza", lowBound=1) 
 salad = LpVariable("salad", lowBound=1) 
 cereal = LpVariable("cereal", lowBound=1)
